@@ -19,15 +19,49 @@
             <a href="#home">Home</a>
             <a href="#about">Tentang Kami</a>
             <a href="#menu">Menu</a>
+            <a href="#products">Produk</a>
             <a href="#contact">Kontak</a>
         </div>
 
         <div class="navbar-extra">
-            <a href="#" id="search"><i data-feather="search"></i></a>
-            <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+            <a href="#" id="search-button"><i data-feather="search"></i></a>
+            <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
             <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
         </div>
 
+        <!-- search -->
+        <div class="search-form">
+            <input type="search" name="search" id="search-box" placeholder="search here...">
+            <label for="search-box"><i data-feather="search"></i></label>
+        </div>
+
+        <!-- shop -->
+        <div class="shopping-cart">
+            <div class="cart-item">
+                <img src="img/p1.jpg" alt="produk1">
+                <div class="item-detail">
+                    <h3>Coffe bean package 1</h3>
+                    <div class="item-price">IDR 99K</div>
+                </div>
+                <i data-feather="trash-2" class="remove-item"></i>
+            </div>
+            <div class="cart-item">
+                <img src="img/p2.jpg" alt="produk1">
+                <div class="item-detail">
+                    <h3>Coffe bean package 2</h3>
+                    <div class="item-price">IDR 89K</div>
+                </div>
+                <i data-feather="trash-2" class="remove-item"></i>
+            </div>
+            <div class="cart-item">
+                <img src="img/p3.jpg" alt="produk1">
+                <div class="item-detail">
+                    <h3>Coffe bean package 3</h3>
+                    <div class="item-price">IDR 199K</div>
+                </div>
+                <i data-feather="trash-2" class="remove-item"></i>
+            </div>
+        </div>
     </nav>
 
     <!-- hero -->
@@ -42,7 +76,7 @@
 
     <!-- about -->
     <section class="about" id="about">
-        <h2><span>Tentang</span>Kami</h2>
+        <h2><span>Tentang</span> Kami</h2>
 
         <div class="row">
             <div class="about-img">
@@ -90,6 +124,81 @@
         </div>
     </section>
 
+    <!-- product -->
+    <section class="products" id="products">
+        <h2><span>Produk Unggulan</span> Kami</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum iste autem minima excepturi ducimus facere ab laboriosam, aut dolores eaque asperiores sed laudantium labore, facilis beatae commodi alias nulla voluptatem. Lorem ipsum dolor sit amet.</p>
+
+        <div class="row">
+            <div class="product-card">
+                <div class="product-icons">
+                    <a href="#"><i data-feather="shopping-cart"></i></a>
+                    <a href="#" class="item-detail-button"><i data-feather="list"></i></a>
+                </div>
+                <div class="product-image">
+                    <img src="img/p1.jpg" alt="produk" width="400">
+                </div>
+                <div class="product-content">
+                    <h3>Coffe bean package 1</h3>
+                    <div class="product-stars">
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                    </div>
+                    <div class="product-price">
+                        IDR 99K <span>IDR 199K</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-icons">
+                    <a href="#"><i data-feather="shopping-cart"></i></a>
+                    <a href="#" class="item-detail-button"><i data-feather="list"></i></a>
+                </div>
+                <div class="product-image">
+                    <img src="img/p2.jpg" alt="produk" width="400">
+                </div>
+                <div class="product-content">
+                    <h3>Coffe bean package 2</h3>
+                    <div class="product-stars">
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class=""></i>
+                    </div>
+                    <div class="product-price">
+                        IDR 89K <span>IDR 189K</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-icons">
+                    <a href="#"><i data-feather="shopping-cart"></i></a>
+                    <a href="#" class="item-detail-button"  ><i data-feather="list"></i></a>
+                </div>
+                <div class="product-image">
+                    <img src="img/p3.jpg" alt="produk" width="400">
+                </div>
+                <div class="product-content">
+                    <h3>Coffe bean package 3</h3>
+                    <div class="product-stars">
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class=""></i>
+                        <i data-feather="star" class=""></i>
+                    </div>
+                    <div class="product-price">
+                        IDR 199K <span>IDR 299K</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- contact -->
     <section class="contact" id="contact">
         <h2><span>Kontak</span> Kami</h2>
@@ -128,9 +237,70 @@
             <a href="#contact">Kontak</a>
         </div>
         <div class="credit">
-            <p>created by <a href="#">ekoAryanto</a>|&copy;2023</p>
+            <p>created by <a href="https://www.instagram.com/cho_aryant/">ekoAryanto </a>| &copy;2023</p>
         </div>
     </footer>
+
+    <!-- modal box -->
+    <div class="modal" id="item-detail-modal">
+        <div class="modal-container">
+            <a href="#" class="close-icon"><i data-feather="x"></i></a>
+            <div class="modal-content">
+                <img src="img/p1.jpg" alt="product1">
+                <div class="product-content">
+                    <h3>Coffe bean package 1</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam hic harum beatae obcaecati. Optio corrupti tempore, nemo, reiciendis sed porro quisquam obcaecati modi laborum ex quibusdam.</p>
+                    <div class="product-stars">
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                    </div>
+                    <div class="product-price">
+                        IDR 99K <span>IDR 199K</span>
+                    </div>
+                    <a href="#"><i data-feather="shopping-cart"></i><span>add to cart</span></a>
+                </div>
+            </div>
+            <!-- <div class="modal-content">
+                <img src="img/p2.jpg" alt="product1">
+                <div class="product-content">
+                    <h3>Coffe bean package 1</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam hic harum beatae obcaecati. Optio corrupti tempore, nemo, reiciendis sed porro quisquam obcaecati modi laborum ex quibusdam.</p>
+                    <div class="product-stars">
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                    </div>
+                    <div class="product-price">
+                        IDR 99K <span>IDR 199K</span>
+                    </div>
+                    <a href="#"><i data-feather="shopping-cart"></i><span>add to cart</span></a>
+                </div>
+            </div>
+            <div class="modal-content">
+                <img src="img/p3.jpg" alt="product1">
+                <div class="product-content">
+                    <h3>Coffe bean package 1</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam hic harum beatae obcaecati. Optio corrupti tempore, nemo, reiciendis sed porro quisquam obcaecati modi laborum ex quibusdam.</p>
+                    <div class="product-stars">
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                    </div>
+                    <div class="product-price">
+                        IDR 99K <span>IDR 199K</span>
+                    </div>
+                    <a href="#"><i data-feather="shopping-cart"></i><span>add to cart</span></a>
+                </div>
+            </div> -->
+        </div>
+    </div>
 
     <script>
         feather.replace();
